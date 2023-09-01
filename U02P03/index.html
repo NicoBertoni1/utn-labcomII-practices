@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Practica3HTMLclr</title>
+
+    <link rel="stylesheet" href="/U02P03/css/index.css">
+
+    
+    <style>
+            table,
+        th,
+        td {
+            border: 1px solid black
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #aaaaaa;
+        }
+
+        div.container {
+            overflow: auto;
+        }
+
+        header {
+            background-color: #e5e5e5;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+
+        nav ul {
+            padding-left: 0px;
+        }
+
+        nav li {
+            list-style: none;
+        }
+
+        nav li a {
+            background-color: #e5e5e5;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+            color: black;
+            font-weight: 700;
+        }
+
+        main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+        }
+
+        .right {
+            background-color: #e5e5e5;
+            float: left;
+            width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #e5e5e5;
+            text-align: center;
+            padding: 10px;
+            margin-top: 7px;
+        }
+
+        /* For mobile phones: */
+        @media only screen and (max-width: 620px) {
+
+            nav,
+            main,
+            .right {
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Club Logartimo Rugby</h1>
+    </header>
+    <div class="container">
+        <!-- Navegación / cotenedor izquierdo -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a
+                        href="file:///C:/SourceCod/UTN/LabComII/utn-labcomII-practices/U02P03/multimedia.html">Multimedia</a>
+                </li>
+                <li><a href="file:///C:/SourceCod/UTN/LabComII/utn-labcomII-practices/U02P03/contact.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Contenedor principal -->
+        <main>
+            <section>
+                <h2>Historia</h2>
+                <p> Rosario Central es un club de fútbol argentino con sede en la ciudad de Rosario, fundado el 24 de diciembre 
+                    de 1889. El equipo compite en la Primera División del fútbol argentino y es uno de los clubes más antiguos 
+                    y tradicionales del país. Ha logrado éxitos notables en el fútbol argentino, incluyendo la conquista de la 
+                    Copa Argentina en varias ocasiones y el título de la Copa Conmebol en 1995. Además, ha participado en 
+                    competiciones internacionales como la Copa Libertadores y la Copa Sudamericana</p>
+            </section>
+            <h2>Resultados</h2>
+            <table>
+                <tr>
+                    <th>Primera</th>
+                    <th>Reserva</th>
+
+                </tr>
+                <tr>
+                    <td>0-1</td>
+                    <td>2-1</td>
+
+                </tr>
+            </table>
+            <h2>Convocatorias</h2>
+            <table style="border: 1px solid black">
+                <tr>
+                    <th>Futbol</th>
+                    <th>Club</th>
+                </tr>
+                <tr>
+                    <td>Facundo Buonanotte</td>
+                    <td>Seleccion</td>
+                </tr>
+                <tr>
+                    <td>Lautaro Giaccone</td>
+                    <td>Seleccion Sub23</td>
+                </tr>
+            </table>
+
+        </main>
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Info</h2>
+            <h3>Campeonatos</h3>
+            <p>5 nacioles</p>
+            <p>5 amateurs</p>
+            <p>1 internacional</p>
+
+        </div>
+    </div>
+    <!-- Pie de Página-->
+    <footer>
+        <p>Desde 1889 siendo el carnaval</p>
+    </footer>
+</body>
+
+</html>

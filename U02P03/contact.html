@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Practica3HTMLclr</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #aaaaaa;
+        }
+
+        div.container {
+            overflow: auto;
+        }
+
+        header {
+            background-color: #e5e5e5;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+
+        nav ul {
+            padding-left: 0px;
+        }
+
+        nav li {
+            list-style: none;
+        }
+
+        nav li a {
+            background-color: #e5e5e5;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+            color: black;
+            font-weight: 700;
+        }
+
+        main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+        }
+
+        .right {
+            background-color: #e5e5e5;
+            float: left;
+            width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #e5e5e5;
+            text-align: center;
+            padding: 10px;
+            margin-top: 7px;
+        }
+
+        /* For mobile phones: */
+        @media only screen and (max-width: 620px) {
+
+            nav,
+            main,
+            .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Club Logartimo Rugby</h1>
+    </header>
+    <div class="container">
+        <!-- Navegación / cotenedor izquierdo -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a target="_blank"
+                        href="file:///C:/SourceCod/UTN/LabComII/utn-labcomII-practices/U02P03/multimedia.html">Multimedia</a>
+                </li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Contenedor principal -->
+        <main>
+
+            <section>
+                <form action="procesar_formulario.php" method="post">
+                    <table>
+                        <tr>
+                            <td><label for="nombre">Nombre:</label></td>
+                            <td><input type="text" id="nombre" name="nombre" placeholder="Nombre" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" name="email" placeholder="Email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="edad">Edad:</label></td>
+                            <td><input type="number" id="edad" name="edad" placeholder="Edad"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="color">Color preferido:</label></td>
+                            <td><input type="color" id="color" name="color"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="comentario">Comentario:</label></td>
+                            <td><textarea id="comentario" name="comentario" rows="4" cols="50" minlength="10"></textarea></td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Enviar">
+                </form>
+
+            </section>
+        </main>
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Info</h2>
+            <p></p>
+            <p></p>
+            <P></P>
+        </div>
+    </div>
+    <!-- Pie de Página-->
+    <footer>
+        <p>Since 1946</p>
+    </footer>
+</body>
+
+</html>
