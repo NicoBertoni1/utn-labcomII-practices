@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Practica 1 en CSS</title>
+    <link rel="stylesheet" href="/U03P01/indexcss.css">
+
+    <style>
+        body {
+    font-family: sans-serif;
+    font-weight: 700;
+    background-color: rgb(245, 245, 245);
+}
+
+h1 {
+    size: 24px;
+    color: #242424;
+    font-weight: bold;
+}
+
+h2 {
+    size: 20px;
+    color: #606060;
+    font-weight: 800;
+}
+
+.texto {
+    font-size: 14px;
+}
+
+ul {
+    max-width: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin-left: 100px;
+    padding: 20px;
+    border: 2px solid blue;
+    list-style-type: none;
+}
+
+a {
+    color: orange;
+}
+
+p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.verde {
+    color: green;
+}
+
+ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+ul li {
+    padding: 10px
+}
+
+.azul{
+    color:blue;
+}
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="titulo">Patagonia argentina</h1>
+    <section>
+        <h2>Introducción</h2>
+        <p class="texto">La Patagonia argentina es una de las cuatro regiones para el
+            desarrollo económico y social de la República Argentina.</p>
+        <p class="texto">Está formada por:</p>
+        <ul>
+            <li>Provincia de <a id href="#">Chubut</a></li>
+            <li class="verde">Provincia de <a class="verde" href="#">Neuquén</a></li>
+            <li>Una parte de la Provincia de <a href="#">La Pampa</a></li>
+            <li>Una parte de la Provincia de <a href="#">Buenos Aires</a>
+            </li>
+            <li>El extremo sur de la Provincia de <a href="#">Mendoza</a></li>
+            <li class="verde">Provincia de <a class="verde" href="#">Río Negro</a></li>
+            <li>Provincia de <a href="#">Santa Cruz</a></li>
+            <li>Provincia de <a href="#">Tierra del Fuego</a></li>
+            <li>Antártida e Islas del Atlántico Sur</li>
+        </ul>
+        <p >Para mas información ingresar en <a class="azul" href="#">la web oficial de la
+                Patagonia</a>.</p>
+    </section>
+
+</body>
+
+</html>
